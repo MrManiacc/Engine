@@ -1,0 +1,19 @@
+namespace nexus.core.nexus.core.assets;
+
+table RawModel {
+    name:string;
+    bones:bool;
+    vertices:[float];
+    textureCoordinates:[float];
+    normals:[float];
+    tangents:[float];
+    boneIds:[int];
+    boneWeights:[float];
+    indices:[int];
+}
+
+table Models{
+    meshes:[RawModel];
+}
+
+root_type Models;
